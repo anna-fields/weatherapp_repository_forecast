@@ -50,7 +50,7 @@ days.forEach (function (day){
   forecastHtml = forecastHtml + ` <div class="weatherForecast">
                 <div class="raw">
                     <div class="col2">
-                        <div class="forecastDate"></div>
+                        <div class="forecastDate">${day}</div>
                         <div class="forecastIcon"></div>
                         <div class="forecastTemps">
                             <span class="forecastMax"></span>
