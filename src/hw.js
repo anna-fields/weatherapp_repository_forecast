@@ -42,7 +42,28 @@ axios.get(apiURL).then(displaySearch)
 
 fetchCurrentWeather("Sintra");
 
+function displayForecast (){
+  let forecast = document.querySelector("#forecast");
 
+let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+days.forEach (function (day){
+  forecastHtml = forecastHtml + ` <div class="weatherForecast">
+                <div class="raw">
+                    <div class="col2">
+                        <div class="forecastDate"></div>
+                        <div class="forecastIcon"></div>
+                        <div class="forecastTemps">
+                            <span class="forecastMax"></span>
+                            <span class="forecastMin"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+forecastElement.innerHTML=forecastHtml;
+}
+
+)
+}
 
 
 function formatDate(date){
