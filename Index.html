@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="weatherApp">
+        <form id="city-form">
+            <label for="enterCity"></label>
+            <input type="text" id="enterCity" placeholder="Enter a city..." required class="cityInput">
+            <input type="submit" value="Search" class="cityButton">
+        </form>
+
+        <header class="currentCity">
+            <h1 id="cityValue">Sintra</h1>
+            <span id="icon">
+            </span>
+            <p class="currentTemp" id="tempValue">
+            </p>
+        </header>
+        <section>
+            <div class="currentConditions">
+                <p>
+                    <span id="current-date"></span>, <span id="description"></span>
+                    <br>
+                    Humidity: <strong id="humidity"></strong>Wind: <strong id="windSpeed"></strong>
+                </p>
+            </div>
+
+        </section>
+        <footer>
+            <p>
+                This page was coded by <a href="https://github.com/anna-fields">Ana Campos</a> and is <a
+                    href="https://github.com/anna-fields/weatherapp_repository" target="_blank"> on GitHub</a> and
+                <a href="https://zippy-platypus-2a45cc.netlify.app/" target="_blank">hosted on Netlify</a>
+            </p>
+        </footer>
+    </div>
+    <script src="src/hw.js"></script>
+</body>
+
+</html>

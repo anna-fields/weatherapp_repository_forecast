@@ -1,0 +1,83 @@
+body{
+  background: rgba(147, 181, 366, 0.8);
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+form{
+    text-align: center;
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+a{
+color: rgb(255, 165, 108)
+}
+
+.weatherApp{
+    background: rgba(247, 247, 247, 0.6);
+    border-radius: 10px;
+    padding: 60px auto;
+    max-width: 700px;
+    height: 80%;
+    margin: 40px auto;
+
+}
+
+.cityInput{
+    background: rgba(247, 247, 247, 0.8);
+    width: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.cityButton{
+    font-size: 20px;
+    color: rgb(242, 242, 242);
+    padding: 12px;
+    border: none;
+    background:rgba(255, 182, 138, 0.8)
+}
+
+.cityButton:hover{
+    cursor: pointer;
+    background: rgba(147, 181, 366, 0.8);
+}
+
+.currentCity{
+    margin: 45px;
+    color: rgb(48, 48, 48);
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.currentTemp{
+    font-size: 80px;
+}
+
+.currentConditions{
+    color:rgb(89, 89, 89);
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    
+}
+.forecast{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
