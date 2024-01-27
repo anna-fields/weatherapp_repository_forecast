@@ -42,6 +42,8 @@ axios.get(apiURL).then(displaySearch)
 
 fetchCurrentWeather("Sintra");
 
+
+
 function displayForecast (){
   let forecast = document.querySelector("#forecast");
 
@@ -59,11 +61,14 @@ days.forEach (function (day){
                     </div>
                 </div>
             </div>`;
-forecastElement.innerHTML=forecastHtml;
+forecastElement.innerHTML=forecastHtml;})}
+
+function getForecast (city){
+  let apiKey= "53980o1ef09d7553cet92b43aefbc155";
+  let apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiURL).then(displayForecast);
 }
 
-)
-}
 
 
 function formatDate(date){
