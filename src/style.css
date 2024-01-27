@@ -53,22 +53,42 @@ color: rgb(255, 165, 108)
 
 .currentCity{
     margin: 45px;
-    color: rgb(48, 48, 48);
+    color: rgb(57, 71, 81);
     font-size: 30px;
-    line-height: 30px;
+    line-height: 50px;
     text-align: center;
+}
+.weather-app-icon{
+width: 200px;
+height: 200px;
+position: relative;
+left: 60px;
+}
+
+.current-icon-temp{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border: none;
+    background-color: rgba(247, 247, 247, 0.4);
+    border-radius: 10px;
 }
 
 .currentTemp{
     font-size: 80px;
+    position: relative;
+    left: 180px;
 }
+
 
 .currentConditions{
     color:rgb(89, 89, 89);
-    text-align: center;
-    line-height: 30px;
+    line-height: 20px;
     font-size: 18px;
-    margin-bottom: 60px;
+    position: relative;
+    top: 170px;
+    right: 180px;
+    white-space: nowrap;
     
 }
 .forecast{
