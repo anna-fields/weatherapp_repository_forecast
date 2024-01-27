@@ -3,6 +3,9 @@ let displayTemp = document.querySelector("#tempValue");
 let temp = Math.round(response.data.temperature.current);
 displayTemp.innerHTML=`${temp}°C`;
 
+let h1=document.querySelector("h1");
+h1.innerHTML=response.data.city;
+
 let iconElement=document.querySelector("#icon");
   icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 
@@ -32,8 +35,6 @@ function search (event) {
 
 
 function fetchCurrentWeather (city){
-  let h1 = document.querySelector("h1");
-  h1.innerHTML=city;
 
 let apiKey = "53980o1ef09d7553cet92b43aefbc155";
 let apiURL = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
