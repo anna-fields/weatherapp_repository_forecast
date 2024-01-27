@@ -24,19 +24,22 @@
 
         <header class="currentCity">
             <h1 id="cityValue">Sintra</h1>
-            <span id="icon">
-            </span>
-            <p class="currentTemp" id="tempValue">
-            </p>
+            <div class="current-icon-temp">
+                <span id="icon">
+                </span>
+                <p class="currentTemp" id="tempValue">
+                </p>
+                <div class="currentConditions">
+                    <div>
+                        <span id="current-date"></span>, <span id="description"></span>
+                        <br>
+                        Humidity: <strong id="humidity"></strong>Wind: <strong id="windSpeed"></strong>
+                    </div>
+                </div>
+            </div>
         </header>
         <section>
-            <div class="currentConditions">
-                <p>
-                    <span id="current-date"></span>, <span id="description"></span>
-                    <br>
-                    Humidity: <strong id="humidity"></strong>Wind: <strong id="windSpeed"></strong>
-                </p>
-            </div>
+
             <div class="weatherForecast" id="forecast"></div>
 
         </section>
